@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta
+    name="description"
+    content="LUXURY PERFUME — простір витончених ароматів, уважно обраних для вашої особистої історії."
+  >
+
+  <title>LUXURY PERFUME — аромат твоєї історії</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav
+    class="navbar navbar-expand-lg navbar-dark fixed-top luxury-nav"
+    id="siteNav"
+    aria-label="Головна навігація"
+  >
+    <div class="container">
+      <a class="navbar-brand wordmark" href="#home">
+        <span class="wordmark-icon">L</span>
+        <span>LUXURY<small>PERFUME</small></span>
+      </a>
+
+      <button
+        class="navbar-toggler menu-toggle"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Відкрити меню"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collection">Колекція</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#benefits">Переваги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакти</a>
+          </li>
+          <li class="nav-item nav-tools">
+            <button
+              class="icon-button"
+              id="searchToggle"
+              type="button"
+              aria-label="Пошук ароматів"
+              aria-expanded="false"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <button
+              class="icon-button cart-trigger"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartCanvas"
+              aria-controls="cartCanvas"
+              aria-label="Відкрити кошик"
+            >
+              <i class="bi bi-bag"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel">
+      <div class="container d-flex align-items-center gap-3">
+        <i class="bi bi-search"></i>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Знайти свій аромат…"
+          aria-label="Пошук у колекції"
+        >
+        <button
+          class="search-close"
+          id="searchClose"
+          type="button"
+          aria-label="Закрити пошук"
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-grain"></div>
+
+      <div class="container hero-container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <div class="hero-copy reveal">
+              <div class="hero-kicker">
+                <span></span>
+                THE ART OF PERFUMERY
+              </div>
+
+              <h1>
+                АРОМАТ,<br>
+                ЯКИЙ РОЗПОВІДАЄ<br>
+                <em>ТВОЮ ІСТОРІЮ</em>
+              </h1>
+
+              <p>
+                Парфумерія — це мистецтво залишати враження.
+                Знайди ноту, яка звучить саме твоїм голосом.
+              </p>
+
+              <a class="gold-button" href="#collection">
+                ВІДКРИТИ КОЛЕКЦІЮ
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+
+              <div class="hero-signature">
+                <span class="signature-line"></span>
+                <span>DISCOVER YOUR SIGNATURE SCENT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div
+              class="hero-stage reveal reveal-delay-2"
+              aria-label="Флакон парфумів на темному тлі"
+            >
+              <div class="hero-light hero-light-one"></div>
+              <div class="hero-light hero-light-two"></div>
+              <div class="hero-beam"></div>
+
+              <div class="hero-photo-wrap">
+                <div class="photo-fallback fallback-hero">
+                  <span></span>
+                </div>
+
+                <img
+                  class="hero-photo image-fallback-target"
+                  src="https://images.unsplash.com/photo-1774682060992-46c7e9f2e50b?auto=format&amp;fit=crop&amp;w=1200&amp;q=88"
+                  alt="Преміальний флакон парфумів у драматичному освітленні"
+                  fetchpriority="high"
+                >
+
+                <img
+                  class="hero-smoke image-fallback-target"
+                  src="https://images.unsplash.com/photo-1770217535698-dd125e5d36c5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt=""
+                  aria-hidden="true"
+                >
+              </div>
+
+              <div class="hero-vertical">LUXURY IN EVERY DROP</div>
+              <div class="hero-edition">
+                EAU DE PARFUM <span>·</span> 01 / 06
+              </div>
+              <span class="hero-spark spark-one" aria-hidden="true">✦</span>
+              <span class="hero-spark spark-two" aria-hidden="true">✧</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom container">
+        <span>EST. WITH INTENTION</span>
+        <span class="hero-bottom-rule"></span>
+        <span>КОЛЕКЦІЯ АРОМАТІВ · 2026</span>
+      </div>
+    </section>
+
+    <section class="collection-section section-space" id="collection">
+      <div class="container">
+        <div class="section-head row align-items-end g-3 reveal">
+          <div class="col-12 col-lg-7">
+            <div class="section-kicker">THE FRAGRANCE EDIT · 01—06</div>
+            <h2>Знайомство з <em>колекцією</em></h2>
+          </div>
+          <div class="col-12 col-lg-5">
+            <p>
+              Шість характерів. Шість способів сказати про себе —
+              не промовляючи ані слова.
+            </p>
+          </div>
+        </div>
+
+        <div class="search-status" id="searchStatus" aria-live="polite"></div>
+
+        <div class="row g-4 product-grid" id="productGrid">
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="golden oud східний деревний амбра"
+            data-product-card
+          >
+            <article class="product-card reveal">
+              <div class="product-visual">
+                <div class="product-fallback fallback-gold"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1627823569857-4d8581dc62b2?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Флакон Golden Oud на темній коробці"
+                  loading="lazy"
+                >
+                <span class="product-index">01 / 06</span>
+                <span class="product-stamp">SIGNATURE</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="golden"
+                  aria-label="Додати Golden Oud у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">СХІДНИЙ · ДЕРЕВНИЙ</div>
+                <div class="product-title-row">
+                  <h3>Golden Oud</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 3 850</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="golden">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="golden">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="midnight rose квітковий троянда пудровий"
+            data-product-card
+          >
+            <article class="product-card reveal reveal-delay-1">
+              <div class="product-visual">
+                <div class="product-fallback fallback-rose"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1774682060922-c395859148c9?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Флакон Midnight Rose на м'якій темній тканині"
+                  loading="lazy"
+                >
+                <span class="product-index">02 / 06</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="rose"
+                  aria-label="Додати Midnight Rose у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">КВІТКОВИЙ · ПУДРОВИЙ</div>
+                <div class="product-title-row">
+                  <h3>Midnight Rose</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 3 420</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="rose">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="rose">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="velvet noir темний шкіряний деревний спеції"
+            data-product-card
+          >
+            <article class="product-card reveal reveal-delay-2">
+              <div class="product-visual">
+                <div class="product-fallback fallback-noir"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1774682060959-efe13b7a12b9?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Темний флакон Velvet Noir на фактурній поверхні"
+                  loading="lazy"
+                >
+                <span class="product-index">03 / 06</span>
+                <span class="product-stamp">NEW ARRIVAL</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="noir"
+                  aria-label="Додати Velvet Noir у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">ШКІРЯНИЙ · ПРЯНИЙ</div>
+                <div class="product-title-row">
+                  <h3>Velvet Noir</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 4 100</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="noir">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="noir">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="amber dreams амбровий солодкий ваніль"
+            data-product-card
+          >
+            <article class="product-card reveal">
+              <div class="product-visual">
+                <div class="product-fallback fallback-amber"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1618606406819-8db8d03ac980?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Бурштиновий аромат Amber Dreams"
+                  loading="lazy"
+                >
+                <span class="product-index">04 / 06</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="amber"
+                  aria-label="Додати Amber Dreams у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">АМБРОВИЙ · ГУРМАНСЬКИЙ</div>
+                <div class="product-title-row">
+                  <h3>Amber Dreams</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 3 690</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="amber">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="amber">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="white elegance чистий цитрусовий свіжий мускус"
+            data-product-card
+          >
+            <article class="product-card reveal reveal-delay-1">
+              <div class="product-visual">
+                <div class="product-fallback fallback-white"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1779285516366-7277d9830566?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Світлий флакон White Elegance на фактурній поверхні"
+                  loading="lazy"
+                >
+                <span class="product-index">05 / 06</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="white"
+                  aria-label="Додати White Elegance у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">ЦИТРУСОВИЙ · ЧИСТИЙ</div>
+                <div class="product-title-row">
+                  <h3>White Elegance</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 3 250</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="white">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="white">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 product-col"
+            data-search="royal essence фужерний деревний елегантний"
+            data-product-card
+          >
+            <article class="product-card reveal reveal-delay-2">
+              <div class="product-visual">
+                <div class="product-fallback fallback-royal"><span></span></div>
+                <img
+                  class="product-image image-fallback-target"
+                  src="https://images.unsplash.com/photo-1589782431423-61e3cd275318?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+                  alt="Чорний флакон Royal Essence із золотими деталями"
+                  loading="lazy"
+                >
+                <span class="product-index">06 / 06</span>
+                <span class="product-stamp">LIMITED EDITION</span>
+                <button
+                  class="quick-add"
+                  type="button"
+                  data-add="royal"
+                  aria-label="Додати Royal Essence у кошик"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-category">ФУЖЕРНИЙ · ДЕРЕВНИЙ</div>
+                <div class="product-title-row">
+                  <h3>Royal Essence</h3>
+                  <span>50 мл</span>
+                </div>
+                <div class="product-buy-row">
+                  <strong>₴ 4 450</strong>
+                  <div>
+                    <button class="text-button details-button" type="button" data-details="royal">
+                      Детальніше
+                    </button>
+                    <button class="add-button" type="button" data-add="royal">
+                      Додати <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="collection-note">
+          <span></span>
+          ДЕМОКОЛЕКЦІЯ · НАЗВИ ТА ЦІНИ НАВЕДЕНО ДЛЯ ПРИКЛАДУ
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-section section-space" id="about">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <div class="brand-image-wrap reveal">
+              <div class="brand-image-fallback photo-fallback fallback-brand">
+                <span></span>
+              </div>
+              <img
+                class="brand-image image-fallback-target"
+                src="https://images.unsplash.com/photo-1627823569857-4d8581dc62b2?auto=format&amp;fit=crop&amp;w=1300&amp;q=88"
+                alt="Парфумерний флакон і лаконічна композиція світла"
+                loading="lazy"
+              >
+              <div class="brand-image-caption">
+                THE BEAUTY OF A FIRST IMPRESSION <span>— 01</span>
+              </div>
+              <div class="brand-image-frame"></div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="brand-copy reveal reveal-delay-1">
+              <div class="section-kicker">THE SCENT OF YOU</div>
+              <h2>АРОМАТИ,<br>ЩО ЗАЛИШАЮТЬ<br><em>ВРАЖЕННЯ</em></h2>
+              <p>
+                Аромат — це невидимий підпис. Він зберігає настрій миті,
+                повертає до спогадів і відкриває нові грані характеру.
+              </p>
+              <p>
+                Ми створили цей простір як запрошення до пошуку:
+                знайти свою ноту, спробувати нове й обрати аромат,
+                який відчувається по-справжньому вашим.
+              </p>
+              <a class="underlined-link" href="#benefits">
+                БІЛЬШЕ ПРО НАШ ПІДХІД
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section section-space" id="benefits">
+      <div class="container">
+        <div class="section-head row align-items-end g-3 reveal">
+          <div class="col-12 col-lg-7">
+            <div class="section-kicker">DETAILS MAKE THE DIFFERENCE</div>
+            <h2>Продумано до <em>дрібниць</em></h2>
+          </div>
+          <div class="col-12 col-lg-5">
+            <p>
+              Уважний вибір і спокійний сервіс — усе, що потрібно,
+              аби насолодитися пошуком свого аромату.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 benefit-grid">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="benefit-card reveal">
+              <span class="benefit-num">01</span>
+              <i class="bi bi-flower1"></i>
+              <h3>Ретельно підібрана колекція</h3>
+              <p>Різні ноти та настрої для натхненного вибору.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="benefit-card reveal reveal-delay-1">
+              <span class="benefit-num">02</span>
+              <i class="bi bi-gift"></i>
+              <h3>Елегантне пакування</h3>
+              <p>Акуратна подача для подарунка собі чи близьким.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="benefit-card reveal reveal-delay-2">
+              <span class="benefit-num">03</span>
+              <i class="bi bi-gem"></i>
+              <h3>Увага до деталей</h3>
+              <p>Від знайомства з ароматом до оформлення замовлення.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="benefit-card reveal reveal-delay-3">
+              <span class="benefit-num">04</span>
+              <i class="bi bi-bag-check"></i>
+              <h3>Зручне оформлення</h3>
+              <p>Зрозумілий шлях від вибору до кошика.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature-banner">
+      <div class="banner-glow"></div>
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <div class="banner-copy reveal">
+              <div class="section-kicker">A PERSONAL DISCOVERY</div>
+              <h2>FIND YOUR<br><em>SIGNATURE SCENT</em></h2>
+              <a class="gold-button gold-button-light" href="#collection">
+                ПЕРЕГЛЯНУТИ КОЛЕКЦІЮ
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <div class="banner-bottle reveal reveal-delay-2">
+              <img
+                class="image-fallback-target"
+                src="https://images.unsplash.com/photo-1774682060959-efe13b7a12b9?auto=format&amp;fit=crop&amp;w=950&amp;q=85"
+                alt="Флакон аромату в атмосфері нічної кампанії"
+                loading="lazy"
+              >
+              <div class="photo-fallback fallback-banner"><span></span></div>
+              <span>EXTRAIT DE PARFUM · Nº 09</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section section-space">
+      <div class="container">
+        <div class="section-head row align-items-end g-3 reveal">
+          <div class="col-12 col-lg-7">
+            <div class="section-kicker">NOTES FROM OUR GUESTBOOK</div>
+            <h2>Враження про <em>аромати</em></h2>
+          </div>
+          <div class="col-12 col-lg-5">
+            <p>
+              Нижче — демонстраційні приклади оформлення відгуків,
+              а не реальні відгуки покупців.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="review-card reveal">
+              <div class="review-stars" aria-label="Приклад оцінки п’ять зірок">★★★★★</div>
+              <blockquote>
+                «Наче вечір у старій бібліотеці — теплий, спокійний
+                і трохи загадковий».
+              </blockquote>
+              <div class="review-author">
+                <span>ДЕМО-ВІДГУК</span><span>Golden Oud</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="review-card reveal reveal-delay-1">
+              <div class="review-stars" aria-label="Приклад оцінки п’ять зірок">★★★★★</div>
+              <blockquote>
+                «Midnight Rose виявився зовсім не про очевидну
+                солодкість. Дуже витончений настрій».
+              </blockquote>
+              <div class="review-author">
+                <span>ДЕМО-ВІДГУК</span><span>Midnight Rose</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="review-card reveal reveal-delay-2">
+              <div class="review-stars" aria-label="Приклад оцінки п’ять зірок">★★★★★</div>
+              <blockquote>
+                «Красиво, стримано, з характером. Саме той аромат,
+                до якого хочеться повертатися».
+              </blockquote>
+              <div class="review-author">
+                <span>ДЕМО-ВІДГУК</span><span>Velvet Noir</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-space">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-12 col-lg-5 reveal">
+            <div class="section-kicker">ТРОХИ ПРО ВАЖЛИВЕ</div>
+            <h2>Питання,<br><em>які виникають</em></h2>
+            <p>Якщо не знайшли відповіді — напишіть нам, і ми підкажемо.</p>
+          </div>
+
+          <div class="col-12 col-lg-7 reveal reveal-delay-1">
+            <div class="accordion perfume-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                  >
+                    Як обрати аромат?<i class="bi bi-plus-lg"></i>
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Почніть із настрою та нот, які вам подобаються:
+                    свіжі цитрусові, квіткові, деревні чи теплі амброві.
+                    Дайте аромату трохи часу розкритися на шкірі.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    Як оформити замовлення?<i class="bi bi-plus-lg"></i>
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Додайте обрані позиції до демонстраційного кошика
+                    та перегляньте його вміст. Для реального оформлення
+                    потрібні підключені платіжна й облікова системи.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    Які способи оплати доступні?<i class="bi bi-plus-lg"></i>
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Це демонстраційний макет магазину, тому оплата
+                    не підключена.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
+                  >
+                    Як здійснюється доставка?<i class="bi bi-plus-lg"></i>
+                  </button>
+                </h3>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Доставка в макеті не налаштована. Для реального продажу
+                    потрібно додати умови та інтеграцію служби доставки.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-space" id="contacts">
+      <div class="container">
+        <div class="contact-shell">
+          <div class="row g-4 g-lg-5">
+            <div class="col-12 col-lg-5 reveal">
+              <div class="section-kicker">A NOTE TO US</div>
+              <h2>Почнімо з<br><em>вашого повідомлення</em></h2>
+              <p>Напишіть нам, який аромат або яка історія вас цікавить.</p>
+              <a class="contact-mail" href="mailto:hello@luxuryperfume.example">
+                hello@luxuryperfume.example
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <div class="social-links">
+                <a href="https://instagram.com/" target="_blank" rel="noreferrer">
+                  Instagram <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://t.me/" target="_blank" rel="noreferrer">
+                  Telegram <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7 reveal reveal-delay-1">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="contactName" class="form-label">Ваше ім’я</label>
+                    <input
+                      id="contactName"
+                      name="name"
+                      class="form-control"
+                      type="text"
+                      required
+                      minlength="2"
+                      placeholder="Ім’я"
+                    >
+                    <div class="invalid-feedback">
+                      Введіть ім’я, щонайменше два символи.
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="contactAddress" class="form-label">Email або телефон</label>
+                    <input
+                      id="contactAddress"
+                      name="contact"
+                      class="form-control"
+                      type="text"
+                      required
+                      placeholder="Як із вами зв’язатися?"
+                    >
+                    <div class="invalid-feedback">
+                      Вкажіть коректний email або телефон.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label">Повідомлення</label>
+                    <textarea
+                      id="contactMessage"
+                      name="message"
+                      class="form-control"
+                      rows="4"
+                      required
+                      minlength="8"
+                      placeholder="Розкажіть, що вас цікавить"
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Напишіть трохи більше про ваш запит.
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+                    <button class="gold-button" type="submit">
+                      НАДІСЛАТИ ПОВІДОМЛЕННЯ
+                      <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                    <span class="form-note">
+                      Демо-форма: дані не передаються на сервер.
+                    </span>
+                  </div>
+
+                  <div class="col-12">
+                    <div
+                      class="form-result"
+                      id="formResult"
+                      role="status"
+                      aria-live="polite"
+                    ></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-4">
+          <a class="navbar-brand wordmark" href="#home">
+            <span class="wordmark-icon">L</span>
+            <span>LUXURY<small>PERFUME</small></span>
+          </a>
+          <p class="footer-about">Аромати, у яких живе ваша історія.</p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2>НАВІГАЦІЯ</h2>
+          <ul>
+            <li><a href="#collection">Колекція</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#benefits">Переваги</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h2>ЗВ’ЯЗОК</h2>
+          <ul>
+            <li><a href="mailto:hello@luxuryperfume.example">hello@luxuryperfume.example</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-3 footer-last">
+          <span>ЗНАЙДИ СВІЙ ПІДПИС</span>
+          <a href="#collection">
+            Обрати аромат <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© 2026 LUXURY PERFUME. Усі права захищено.</span>
+        <span>Демонстраційний магазин · Фото Unsplash</span>
+      </div>
+
+      <div class="photo-credits">
+        Фото:
+        <a href="https://unsplash.com/photos/a-clear-glass-perfume-bottle-on-a-dark-cloth-coi2fv2YUAc" target="_blank" rel="noreferrer">Suhas Hanjar</a> ·
+        <a href="https://unsplash.com/photos/clear-glass-perfume-bottle-on-black-box-LvCncarPI6A" target="_blank" rel="noreferrer">Camille Brodard</a> ·
+        <a href="https://unsplash.com/photos/clear-glass-perfume-bottle-on-dark-textured-fabric-4Z0SA6e1kuM" target="_blank" rel="noreferrer">Suhas Hanjar</a> ·
+        <a href="https://unsplash.com/photos/clear-glass-perfume-bottle-on-black-table-K9fNmfJOir4" target="_blank" rel="noreferrer">Laura Chouette</a> ·
+        <a href="https://unsplash.com/photos/a-clear-glass-perfume-bottle-on-a-light-textured-surface-7EUBjM_6iro" target="_blank" rel="noreferrer">Ayana Bula</a> ·
+        <a href="https://unsplash.com/photos/black-and-gold-calvin-klein-perfume-bottle-80dUHvE6Mlk" target="_blank" rel="noreferrer">Laura Chouette</a> ·
+        <a href="https://unsplash.com/photos/wisps-of-smoke-curl-upwards-against-a-dark-background-aLc10p-f5hw" target="_blank" rel="noreferrer">Paul Sawyer — дим</a>
+        · Unsplash License
+      </div>
+    </div>
+  </footer>
+
+  <div
+    class="offcanvas offcanvas-end cart-drawer"
+    tabindex="-1"
+    id="cartCanvas"
+    aria-labelledby="cartTitle"
+  >
+    <div class="offcanvas-header">
+      <div>
+        <div class="section-kicker">YOUR SELECTION</div>
+        <h2 class="offcanvas-title" id="cartTitle">
+          Ваш кошик <span id="drawerCount">(0)</span>
+        </h2>
+      </div>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="offcanvas"
+        aria-label="Закрити"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-empty" id="cartEmpty">
+        <i class="bi bi-bag"></i>
+        <p>Кошик поки порожній</p>
+        <a href="#collection" data-bs-dismiss="offcanvas">Переглянути колекцію</a>
+      </div>
+
+      <div class="cart-summary" id="cartSummary">
+        <div>
+          <span>Разом</span>
+          <strong id="cartTotal">₴ 0</strong>
+        </div>
+        <button type="button" class="gold-button checkout-button" id="checkoutButton">
+          ПЕРЕЙТИ ДО ЗАМОВЛЕННЯ
+          <i class="bi bi-arrow-up-right"></i>
+        </button>
+        <p>Демонстраційний кошик. Оплата не підключена.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div
+      id="cartToast"
+      class="toast luxury-toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      <div class="toast-body">
+        <i class="bi bi-check2"></i>
+        <span id="toastText">Додано до кошика</span>
+        <button
+          type="button"
+          class="toast-close"
+          data-bs-dismiss="toast"
+          aria-label="Закрити"
+        >
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="productModal"
+    tabindex="-1"
+    aria-labelledby="productModalTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content product-modal">
+        <div class="modal-header">
+          <div>
+            <div class="section-kicker">THE FRAGRANCE NOTES</div>
+            <h2 class="modal-title" id="productModalTitle">Аромат</h2>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Закрити"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <p id="productModalCopy"></p>
+          <div class="modal-notes">
+            <span>ВЕРХНІ НОТИ</span>
+            <strong id="productNotes"></strong>
+          </div>
+          <div class="modal-price" id="productModalPrice"></div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="gold-button" id="modalAddButton">
+            ДОДАТИ В КОШИК
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
